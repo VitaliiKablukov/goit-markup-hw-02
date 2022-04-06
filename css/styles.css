@@ -161,13 +161,21 @@ color: var(--color-logo-focus);
     letter-spacing: 0.03em;
     color: #ffffff;
 }
-.footer-list-mail,
-.footer-list-tel {
+.footer-mail,
+.footer-tel {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;  
     color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail:focus,
+.footer-mail:hover {
+    color: var(--color-logo-focus);
+}
+.footer-tel:focus,
+.footer-tel:hover {
+    color: var(--color-logo-focus);
 }
 /* PORTFOLIO */
 .filter-button {
