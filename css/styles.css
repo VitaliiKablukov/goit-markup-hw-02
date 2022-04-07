@@ -188,7 +188,8 @@ color: var(--color-third);
     color: var(--color-second);
     letter-spacing: 0.06em;
 }
-.portfolio-project-title> p {
+.portfolio-project-text {
     font-size: 16px;
     line-height: 1.9;
+    color: var(--color-first);
 }
