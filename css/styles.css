@@ -11,6 +11,8 @@ sans-serif;  */
     --color-second: #212121;
     --color-third: #ffffff;
     --color-logo-focus: #2196F3;
+    --first-background-color: #ffffff;
+    --second-background-color: #2F303A;
 }
 ul {
     list-style: none;
@@ -20,10 +22,11 @@ a {
     text-decoration: none;
 }
 body {
-     background-color: #ffffff;
+     background-color: var(--first-background-color) ;
      font-family: Roboto, Raleway, sans-serif;
-     font-weight: 400;
-     color: var(--color-first);   
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-first);   
  }
  /* logo footer and header */
  .logo-header
@@ -32,7 +35,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;   
-    letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
     }
@@ -41,7 +43,9 @@ body {
         color: var(--color-logo-focus);
     }
     /* header list */
-    
+.header-list-link.current {
+    color: var(--color-logo-focus);
+}
 .header-list {
     list-style: none;
     text-decoration: none
@@ -49,10 +53,9 @@ body {
     .header-list-link,
     .header-list-item {
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--color-first);
+        color: var(--color-second);
     }
     .header-list-link:hover,
     .header-list-link:focus {
@@ -61,7 +64,6 @@ color: var(--color-logo-focus);
 .header-mail,
 .header-tel {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-first);
@@ -76,7 +78,7 @@ color: var(--color-logo-focus);
 }
 /* Hero */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--second-background-color);
 }
 .hero-title {
 font-weight: 900;
@@ -84,10 +86,11 @@ font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
+text-transform: uppercase;
 color: var(--color-third);
 }
 .hero-button {
-    font-family: inherit;
+font-family: inherit;
 background-color: var(--color-logo-focus);
 color: var(--color-third);
 cursor: pointer;
@@ -99,50 +102,39 @@ letter-spacing: 0.06em;
 }
 /* benefits */
 .benefits-item-title {
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-second);
 }
 .benefits-item-text {
-    font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
 }
 /* project */
 .project-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--color-second);
 }
 /* team */
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     color: var(--color-second);
 }
 .team-item-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     color: var(--color-second);
 }
 .team-item-text {
     font-size: 16px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 /* footer */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--second-background-color);
 }
 .logo-footer {
     color: var(--color-third);
@@ -150,23 +142,19 @@ letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 .logo-footer-web {
 color: var(--color-logo-focus);
 }
 .footer-list-address{
-    font-size: 14px;
+    font-style: normal;
     line-height: 1.7;  
-    letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--color-third);
 }
 .footer-mail,
 .footer-tel {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;  
+    font-style: normal;
+    line-height: 1.7;  
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail:focus,
@@ -195,7 +183,6 @@ color: var(--color-third);
 }
 /* project portfolio */
 .portfolio-project-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--color-second);
@@ -204,5 +191,4 @@ color: var(--color-third);
 .portfolio-project-title> p {
     font-size: 16px;
     line-height: 1.9;
-letter-spacing: 0.03em;
 }
