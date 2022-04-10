@@ -13,6 +13,9 @@ sans-serif;  */
     --color-logo-focus: #2196F3;
     --first-background-color: #ffffff;
     --second-background-color: #2F303A;
+    --background-button-porfolio: #F5F4FA;
+    --logo-header-color: #000000;
+    --mailtel-color: rgba(255, 255, 255, 0.6);
 }
 ul {
     list-style: none;
@@ -35,7 +38,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;   
-    color: #000000;
+    color: var(--logo-header-color);
     text-decoration: none;
     }
 
@@ -102,6 +105,7 @@ letter-spacing: 0.06em;
 }
 /* benefits */
 .benefits-item-title {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--color-second);
@@ -155,7 +159,7 @@ color: var(--color-logo-focus);
 .footer-tel {
     font-style: normal;
     line-height: 1.7;  
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--mailtel-color);
 }
 .footer-mail:focus,
 .footer-mail:hover {
@@ -168,7 +172,7 @@ color: var(--color-logo-focus);
 /* PORTFOLIO */
 .filter-button {
     font-family: inherit;
-    background-color: #F5F4FA;
+    background-color: var(--background-button-porfolio);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
